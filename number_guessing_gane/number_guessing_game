@@ -1,0 +1,12 @@
+import random
+guss_num = random . randint(0,99)
+print("Can you guss the number from 0 to 99 which is in my mind ?")
+while True :
+    user_num = int(input("Enter your choice : "))
+    if user_num == guss_num :
+        print ("you are right : ")
+        break
+    elif user_num > guss_num :
+        print("Your number is greater than the number,\nTry Again!")
+    else :
+         print("'Your number is less than the number',\nTry Again!")
